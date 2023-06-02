@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ONLINE SCHOOL</title>
+  <meta charset="UTF-8" />
+  <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+  />
+  <style>
+    .is-hidden {
+      display: none;
+    }
+
+    body {
+      font-family: sans-serif;
+      font-size: 140%;
+    }
+    #question {
+      display: block;
+      font-size: 200%;
+      font-weight: bold;
+      padding: 10px 0;
+    }
+    #congrats {
+      font-size: 200%;
+      color: lightgreen;
+      font-weight: bold;
+      padding: 10px 0;
+      display: none;
+    }
+    #congrats.is-visible {
+      display: block;
+    }
+    #avatar {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      width: 200px;
+      height: 200px;
+    }
+    #avatar img {
+      border-radius: 100px;
+      max-width: 100%;
+    }
+    input,button {
+      font-size: 130%;
+    }
+  </style>
+</head>
+
+<body>
+<p>Questions left: <strong id="meta"></strong></p>
+<p>Your score: <strong id="score">0</strong> points</p>
+<p id="write-translation">Write the translation of the word: <span id="question"></span></p>
+<p>
+  <input type="text" id="field" />
+  <input type="button" value="CHECK" id="checkit">
+</p>
+
+<div id="hint"></div>
+
+<p><button id="next" disabled>NEXT</button></p>
+
+<div id="congrats">
+CONGRATULATIONS, <br> DEAR PARTICIPANT <br> YOU ARE THE CHAMPION!!!
+</div>
+
+
+
+<script src="index.js"></script>
+</body>
+</html>
